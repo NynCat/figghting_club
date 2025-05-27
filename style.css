@@ -1,0 +1,742 @@
+body{
+    margin:0;
+    padding:0;  
+    overflow-x: hidden;
+}
+h1,h2,h3{
+    padding:0;
+    margin:0;
+}
+ul,ol{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+button{
+    background:white;
+    border: none;
+    cursor: pointer;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.header-menu{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu>li{
+    margin-right: 46px;
+}
+.menu>li:last-child{
+    margin-right: 0;
+}
+.menu>li>a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #443737;
+    position: relative;
+}
+.menu>li>a:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ffc725;
+    bottom: 0;
+    left: 0; 
+    border-radius: 1px;
+}
+.header-menu>button{
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #443737;
+}
+.header-menu>button>img{
+    margin-right: 5px;
+}
+.header-bottom{
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom>p>a{
+    color: #dedede;
+}
+.header-bottom>p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #dedede;
+
+}
+.header-bottom>h1{
+    color: #dedede; 
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 79px;
+    color: #fff;
+}
+.banner{
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 100px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.marker{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #F37335;
+    display: inline-block;
+    padding: 5px 18.5px 5px;
+    border-radius: 14px;
+    width: 95px;
+    height: 28px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner>h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.text-banner{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+    max-width: 308px;
+}
+
+.banner>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40; 
+    background: #fbb731;
+    border-radius: 5px;
+    width: 170px;
+    height: 58px;
+}
+.title{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #1b2a49;
+    margin-bottom: 34px;
+}
+.burgers-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.burgers-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.burgers-item>h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 127%;
+    text-align: center;
+    color: #1b2a49;
+}
+.burgers-item>p{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #979797;
+}
+
+.burgers-item>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40;
+    background: #fbb731;
+    border-radius: 5px;
+    padding: 10px 30px ;
+    margin-bottom:50px ;
+    
+}
+.burgers-item>button>img{
+    margin-right: 10px;
+}
+.burgers{
+    margin-bottom: 100px;
+}
+footer{
+    background: #1e2f40;
+    padding-top: 110px;
+    padding-bottom: 106px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.basic{
+    margin-right: 145px;
+}
+.basic-title{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.basic-item{
+    margin-bottom: 9px;
+}
+.basic-item:last-child{
+    margin-bottom: 0;
+}
+.basic-item>a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #dedede;
+}
+.street-time{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #dedede;
+}
+.info-basic{
+    margin-right: 132px;
+}
+.info-item{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+}
+.tel>a{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
+    color: #fbb731;
+}
+.burger-menu{
+    display: none !important;
+}
+.modal{
+    display: none;
+}
+.header{
+    background: linear-gradient(180deg, #0c4c7b 0%, #1e2f40 100%); 
+    padding: 170px 0;
+}
+.time{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fbb731;
+    margin-bottom: 10px;
+}
+.title-main{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #faf9f9;
+    max-width: 580px;
+    margin-bottom: 40px;
+}
+.ad{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;
+    color: #dedede;
+    max-width: 526px;
+    margin-bottom: 42px;
+}
+.header-banner>a{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40;
+    background: #fbb731;
+    border-radius: 5px;
+    padding: 20px 47px;
+}
+.header-banner{
+    position: relative;
+}
+.burger-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.burger-bg>img{
+    width: 829px;
+    height: 861px;
+    position: absolute;
+    top: 0;
+    right: 262px;
+    z-index: 2;
+}
+.linegradient{
+    width: 432px;
+    height: 853px;
+    background: linear-gradient(2deg, #f37335 0%, #fbb731 100%, #fdc830 100%);
+    position: absolute;
+    top: 0;
+    right: 436px;
+
+}
+.two-banners{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 185px;
+    margin-bottom: 186px;
+}
+.first-banner{
+    background-image: url(../img/banner1.png);
+    padding:116px 139px 116px 50px;
+    background-repeat: no-repeat;
+    max-width: 392px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+}
+.marker-1{
+    background: #f37335;
+    border-radius: 14px;
+    width: 101px;
+    height: 28px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-banner>h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color: #fff;
+}
+.text-banner-1{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+}
+.second-banner{
+    background-image: url(../img/banner2.png);
+    padding:102px 177px 102px 50px;
+    background-repeat: no-repeat;
+}
+.second-banner>h1{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    color: #fff;
+}
+.text-banner-2{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #faf9f9;
+    max-width:300px ;
+}
+.second-banner>button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1e2f40;
+    background: #fbb731;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 170px;
+    height: 58px;
+}
+
+@media (max-width:768px){
+    .container{
+        padding: 0 15px;
+    }
+    .menu>li {
+        margin-right: 22px;
+    }
+    .header-bottom{
+       background-position: center; 
+    }
+    .banner{
+        background-position-x: -120px;
+        padding-left: 40px;
+        margin-top: 72px;
+        margin-bottom: 80px;
+    }
+    .burgers-item>img{
+        width: 359px;
+    }
+    .basic{
+        margin-right: 86px;
+        margin-left: 77px;
+    }
+    .info-basic{
+        margin-right: 0;
+    }
+    .tel{
+        margin-left: 77px;
+        margin-top: 13px;
+    }
+    .title-main{
+        font-size: 86px
+    }
+    .time{
+        font-size: 22px;
+    }
+    .ad{
+        font-size: 14px;
+        max-width: 385px;
+    }
+    .burger-bg>img{
+        width: 496px;
+        height: 516px;
+        right: -122px;
+        top: 311px;
+    }
+    .linegradient{
+        display: none;
+    }
+
+    .two-banners{
+        margin: 5.51px;
+        margin-top: 106px;
+        margin-bottom: 140px;
+    }
+    .first-banner{
+        padding: 44px 52px 44px 30px;
+        width: 280px;
+        height: 211px;
+        background-position-x: -112px;
+        background-position-y: -34px;
+    }
+    .first-banner>button{
+        font-size: 14px;
+    }
+    .text-banner-1{
+        font-size: 15px;
+    }
+    .second-banner>button{
+        font-size: 14px;
+        line-height: 129%;
+    }
+    .text-banner-2{
+        width: 301px;
+    }
+    .second-banner{
+        padding: 60px 30px;
+        width: 302px;
+        height: 179px ;
+    }
+    
+
+}
+@media (max-width:320px){   
+    .burger-menu{
+        display: flex !important;
+    }
+    .menu{
+        display: none;
+    }
+    .logo>img{
+        width: 116px;
+    }
+    .burgers-item>img{
+        width: 139px;
+    }
+    .burgers-item>h3{
+        font-size: 13px;
+        margin-top: 7px;
+    }
+    .burgers-item>p{
+        margin-bottom: 7px;
+    }
+    .burgers-item>button{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tel{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .basic{
+        margin-right: 0;
+        margin-left: -64px;
+        margin-top: 29px;
+    }
+    .info-basic{
+        margin-top: 33px;
+        margin-left: -64px;
+    }
+    .header-bottom{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    .header-bottom>p{
+        font-size: 12px;
+    }
+    .header-bottom>h1{
+        font-size: 38px;
+    }
+    .header-bottom{
+        background-image: url(../img/ban.png);
+        max-height: 253px;
+    }
+    .banner{
+        margin-top: 33px;
+        margin-bottom: 50px;
+        padding: 34px 0;
+        padding-left: 15px;
+        background-position: url('../img/nom.png');
+        background-position-x: unset;
+        background-position-x: -155px;
+    }
+    .text-banner{
+        max-width: 247px;
+    }
+    .marker{
+        margin-bottom: 3px;
+    }
+    .banner>button{
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+    .title{
+        font-size: 27px;
+        margin-bottom: 24px;
+    }
+    .tel{
+        order: -1;
+        margin-left: 51px;       
+    }
+    footer{
+        padding: 61px 0;
+    }
+    .modal{
+        display: none;
+        position: absolute;
+        top: 20px;
+        background: #fff8dc;
+        padding: 40px 0;
+        width: 100%;    
+    }
+    .exit{
+        background: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .menu-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-model>li{
+        margin-bottom: 23px;        
+    }
+    .menu-modal>li:last-child{
+        margin-bottom: none;
+    }
+    .menu-modal>li>a{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #443737;
+    }
+    .active{
+        border-bottom: 1px solid #ffc725;
+        border-radius: 1px;
+    }    
+    .header{
+        margin-top: -170px;
+    }
+    .line-gradient{
+        display: none;
+    }
+    .burger-bg>img{
+        padding-right: 20px;
+    }   
+    .time{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 195%;
+        text-transform: uppercase;
+        color: #fbb731;
+        margin-left: 10px;
+    }
+    .title-main{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #faf9f9;
+    }
+    .ad{
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        color: #dedede;
+    }
+    .burger-bg>img{
+        width: 298px;
+        height: 297px;
+        top: 375px;
+        right: -101px;
+    }
+    .two-banners{
+        display: flex;
+        flex-direction: column; 
+    }
+    .first-banner{
+        width: 247px;
+        height: 172px;
+        padding:40px 58px 58px 15px;
+        margin-bottom: 22px;
+        background-position-x: -77px;
+        background-position-y: -44px;
+        margin-top:  92px;
+    }
+    .first-banner>button{
+        width: 105px;
+        height: 25px;
+    }
+    .text-banner-1{
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+        color: #faf9f9;
+        max-width:247px ;
+    } 
+    .second-banner>h1{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 144%;
+        color: #fff;
+        max-width: 206px;
+    }
+    .text-banner-2{
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #faf9f9;
+        max-width: 266px;
+    }
+    .second-banner>button{
+        width: 133px;
+        height: 53px;
+    }
+    .second-banner{
+        width: 269px;
+        height: 190px;
+        background-position-x: -117px;
+        background-position-y: -44px;
+        margin-bottom:61px ;
+        padding:35px 38px 44px 12px;
+    }
+    .two-banners{
+        margin: 0;
+        margin-left: -15px;
+    }
+    .header-banner{
+        padding-top: 42px ;
+    }
+}
